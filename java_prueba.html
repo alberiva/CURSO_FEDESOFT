@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practiva en JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        console.log("PRIMERA FUNCION");
+        var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+        for (k in dias) {
+            console.log(dias[k]);
+        }
+
+        console.log("");
+        console.log("SEGUNDA FUNCION");
+        dias.forEach(function(dia) {
+            console.log(dia);
+        })
+
+        console.log("");
+        console.log("TERCERA FUNCION");
+        dias.forEach(dia => console.log(dia));
+        
+        console.log("");
+        var edad = 18;
+        if(edad < 12) {
+            console.log("Todavía eres muy pequeño");
+        } else if(edad < 18) {
+            console.log("Eres un adolescente");
+        } else if (edad < 35) {
+            console.log("Aun sigues siendo joven");
+        }
+
+        console.log("");
+        console.log("MI ARRAY");
+        var colores = ["Amarillo", "Azul", "Rojo"];
+        var nros = [101, 102];
+        var mi_array = [1, 2, "Enero", "Febrero", true, false, colores, nros ];
+        mi_array.forEach(function(dia) {
+            console.log(dia);
+            console.log("\tqqqq");
+        })
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+

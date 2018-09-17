@@ -1,0 +1,29 @@
+@font-face {
+    font-family:"Anders";
+    src: url('fuentes/Anders.ttf') format("truetype");
+  }
+  h1 {
+    align-self: center;
+    color: brown;
+    letter-spacing: 15px; /*ESPACIO ENTRE LETRAS*/
+    /*background-color: yellow;*/
+    /*border: 1px solid black;*/
+  }
+  body {
+    margin: 0;
+    font-family: 'Anders', Fallback, sans-serif;
+  }
+  #contenedor-uno {
+    border: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: red;
+    width: 300px;
+  }
+  #contenedor-dos {
+    border: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: blue;
+    width: 900px;
+  }

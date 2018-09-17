@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prueba DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        var EliminaCero = function() {
+            //ELIMINA EL ELEMENTO "0" DE LA LISTA
+            document.getElementById("prueba_list").children[0].remove();
+        };
+        var AddCero = function() {
+            var textoEntrada = document.getElementById("texto-entrada").value;
+            console.log(typeof textoEntrada)
+            console.log("Se ejecuto la función AddCero")
+            var nodo = document.createElement("li");
+            var textoNodo = document.createTextNode(textoEntrada);
+            nodo.appendChild(textoNodo);
+            document.getElementById("prueba_list").appendChild(nodo) 
+        };
+    </script>
+
+    <input type="button" value="Ver" onclick="document.getElementById('mostrar').style.visibility='visible'">
+    <button onclick="EliminaCero()">Eliminar</button>
+
+    <input type="text" id="texto-entrada">
+    <button onclick="AddCero()">Adicione</button>
+
+    <div id="mostrar" style="visibility:hidden">
+        <div class="row">
+            <ol id="prueba_list">
+                <li>h</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>a</li>
+                <li>f</li>
+                <li>g</li>
+                <li>h</li>
+            </ol>
+        </div>
+    </div>
+    <!--<input type="radio" id="huey" name="drone" checked>
+    <input type="checkbox" id="cbox1" value="first">-->
+</body>
+</html>

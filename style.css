@@ -1,0 +1,27 @@
+  h1, h2, h3 {
+    align-content: center;
+    color: brown;
+    letter-spacing: 15px; /*ESPACIO ENTRE LETRAS*/
+    /*background-color: yellow;*/
+    /*border: 1px solid black;*/
+  }
+  #contenedor-uno {
+    border: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: yellow;
+  }
+  #contenedor-dos {
+    border: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: red;
+  }
+  .contenedor {
+    border: 1px;
+    color: green;
+  }
+  p {
+    color: red;
+  }
+  
